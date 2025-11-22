@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -92,8 +92,18 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <div class="text-2xl font-bold text-green-600">
-                        <i class="fas fa-leaf mr-2"></i>Oscadri Bio
+                    <!-- Logo + marca -->
+                    <div class="flex items-center">
+                        <img src="img/logo-oscadri.png" alt="Logo Hilos Oscadri" class="h-10 w-auto mr-3 hidden sm:block">
+                        <div>
+                            <div class="text-xl font-bold text-green-700 leading-tight flex items-center">
+                                <i class="fas fa-leaf mr-2 sm:hidden"></i>
+                                Oscadri Bio
+                            </div>
+                            <div class="text-xs text-gray-500 hidden sm:block">
+                                Hilaza Biodegradable para Agricultura
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
@@ -123,35 +133,41 @@
                     </h1>
                     <p class="text-xl mb-8 text-green-100">
                         Revoluciona tu agricultura con nuestra hilaza 100% biodegradable. 
-                        Resistencia excepcional, descomposición natural, y cero impacto ambiental.
+                        Resistencia excepcional, descomposición natural y reducción de residuos plásticos en tus cultivos.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <button class="bg-white text-green-600 px-8 py-4 rounded-full font-semibold hover:bg-green-50 transition duration-300 pulse-green">
+                        <a href="#beneficios" class="bg-white text-green-600 px-8 py-4 rounded-full font-semibold hover:bg-green-50 transition duration-300 pulse-green text-center">
                             <i class="fas fa-seedling mr-2"></i>Conocer Más
-                        </button>
-                        <button class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-green-600 transition duration-300">
+                        </a>
+                        <a href="#contacto" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-green-600 transition duration-300 text-center">
                             <i class="fas fa-phone mr-2"></i>Contactar Ahora
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="slide-in-right">
-                    <div class="relative">
-                        <div class="floating-animation bg-white bg-opacity-20 rounded-3xl p-8 backdrop-blur-sm">
+                    <div class="relative space-y-6">
+                        <!-- Foto real principal (sube el archivo a img/hilaza-biodegradable-hero.jpg) -->
+                        <img src="img/hilaza-biodegradable-hero.jpg" alt="Hilaza Biodegradable Oscadri en bobinas listas para uso agrícola" class="rounded-3xl shadow-2xl w-full object-cover max-h-96">
+                        
+                        <div class="floating-animation bg-white bg-opacity-80 rounded-3xl p-8 backdrop-blur-sm">
                             <div class="text-center">
-                                <div class="text-6xl text-green-200 mb-4">
+                                <div class="text-6xl text-green-500 mb-4">
                                     <i class="fas fa-leaf"></i>
                                 </div>
-                                <h3 class="text-2xl font-bold text-white mb-4">100% Biodegradable</h3>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-4">100% Biodegradable</h3>
                                 <div class="grid grid-cols-2 gap-4 text-center">
-                                    <div class="bg-white bg-opacity-20 rounded-xl p-4">
-                                        <div class="text-2xl font-bold text-green-200">60-90</div>
-                                        <div class="text-sm text-green-100">Días degradación</div>
+                                    <div class="bg-green-50 rounded-xl p-4">
+                                        <div class="text-2xl font-bold text-green-700">60-90</div>
+                                        <div class="text-sm text-gray-600">Días de degradación <br>en condiciones controladas*</div>
                                     </div>
-                                    <div class="bg-white bg-opacity-20 rounded-xl p-4">
-                                        <div class="text-2xl font-bold text-green-200">100%</div>
-                                        <div class="text-sm text-green-100">Natural</div>
+                                    <div class="bg-emerald-50 rounded-xl p-4">
+                                        <div class="text-2xl font-bold text-emerald-700">+26</div>
+                                        <div class="text-sm text-gray-600">Años de experiencia <br>en hilos e hilazas</div>
                                     </div>
                                 </div>
+                                <p class="text-xs text-gray-500 mt-4">
+                                    *El comportamiento real depende del tipo de cultivo, clima y manejo del suelo.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -166,7 +182,7 @@
             <div class="text-center mb-16 fade-in-up">
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">¿Por qué elegir nuestra Hilaza Biodegradable?</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Más de 26 años de experiencia nos respaldan en la creación de soluciones textiles innovadoras y sostenibles
+                    Más de 26 años de experiencia nos respaldan en la creación de soluciones textiles innovadoras y sostenibles.
                 </p>
             </div>
             
@@ -176,7 +192,7 @@
                         <i class="fas fa-recycle text-white text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-4">100% Biodegradable</h3>
-                    <p class="text-gray-600">Se descompone naturalmente en 60-90 días, enriqueciendo el suelo sin dejar residuos tóxicos.</p>
+                    <p class="text-gray-600">Se descompone de forma natural, reduciendo la acumulación de plásticos en el campo.</p>
                 </div>
                 
                 <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 text-center">
@@ -184,7 +200,7 @@
                         <i class="fas fa-dumbbell text-white text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-4">Alta Resistencia</h3>
-                    <p class="text-gray-600">Soporta cargas pesadas manteniendo la integridad durante todo el ciclo de cultivo.</p>
+                    <p class="text-gray-600">Soporta cargas importantes manteniendo la integridad durante todo el ciclo de cultivo.</p>
                 </div>
                 
                 <div class="card-hover bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 text-center">
@@ -192,7 +208,7 @@
                         <i class="fas fa-coins text-white text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-4">Ahorro Económico</h3>
-                    <p class="text-gray-600">Elimina costos de remoción y limpieza, reduciendo hasta 40% los gastos operativos.</p>
+                    <p class="text-gray-600">Reduce costos de recolección de hilo y limpieza del lote al final del ciclo.</p>
                 </div>
                 
                 <div class="card-hover bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-8 text-center">
@@ -200,23 +216,23 @@
                         <i class="fas fa-shield-alt text-white text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-4">Resistente al Clima</h3>
-                    <p class="text-gray-600">Mantiene propiedades bajo condiciones extremas de humedad, sol y temperatura.</p>
+                    <p class="text-gray-600">Mantiene sus propiedades bajo condiciones de humedad, sol y temperatura variables.</p>
                 </div>
                 
                 <div class="card-hover bg-gradient-to-br from-teal-50 to-green-50 rounded-2xl p-8 text-center">
                     <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-seedling text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Enriquece el Suelo</h3>
-                    <p class="text-gray-600">Al degradarse, aporta nutrientes orgánicos que mejoran la calidad del suelo.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Mejor gestión del suelo</h3>
+                    <p class="text-gray-600">Evita acumulaciones de plástico, facilitando labores de preparación y siembra.</p>
                 </div>
                 
                 <div class="card-hover bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-8 text-center">
                     <div class="w-16 h-16 bg-rose-600 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-certificate text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Certificado Ecológico</h3>
-                    <p class="text-gray-600">Cumple con estándares internacionales de sostenibilidad y agricultura orgánica.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Enfoque sostenible</h3>
+                    <p class="text-gray-600">Alineada con exigencias ambientales y certificaciones de producción responsable.</p>
                 </div>
             </div>
         </div>
@@ -245,15 +261,15 @@
                         </li>
                         <li class="flex items-center text-red-700">
                             <i class="fas fa-times-circle mr-3"></i>
-                            <span>Contamina el suelo y agua</span>
+                            <span>Contamina el suelo y fuentes de agua</span>
                         </li>
                         <li class="flex items-center text-red-700">
                             <i class="fas fa-times-circle mr-3"></i>
-                            <span>Requiere remoción manual</span>
+                            <span>Requiere remoción manual tras la cosecha</span>
                         </li>
                         <li class="flex items-center text-red-700">
                             <i class="fas fa-times-circle mr-3"></i>
-                            <span>Costos adicionales de limpieza</span>
+                            <span>Costos adicionales de limpieza y disposición</span>
                         </li>
                         <li class="flex items-center text-red-700">
                             <i class="fas fa-times-circle mr-3"></i>
@@ -272,23 +288,23 @@
                     <ul class="space-y-4">
                         <li class="flex items-center text-green-700">
                             <i class="fas fa-check-circle mr-3"></i>
-                            <span>Degradación natural en 60-90 días</span>
+                            <span>Se degrada de forma controlada tras el uso</span>
                         </li>
                         <li class="flex items-center text-green-700">
                             <i class="fas fa-check-circle mr-3"></i>
-                            <span>Enriquece el suelo con nutrientes</span>
+                            <span>Minimiza residuos plásticos en el lote</span>
                         </li>
                         <li class="flex items-center text-green-700">
                             <i class="fas fa-check-circle mr-3"></i>
-                            <span>Sin necesidad de remoción</span>
+                            <span>Reduce o elimina labores de recolección de hilo</span>
                         </li>
                         <li class="flex items-center text-green-700">
                             <i class="fas fa-check-circle mr-3"></i>
-                            <span>Ahorro del 40% en costos</span>
+                            <span>Ahorro en mano de obra y disposición final</span>
                         </li>
                         <li class="flex items-center text-green-700">
                             <i class="fas fa-check-circle mr-3"></i>
-                            <span>Huella de carbono negativa</span>
+                            <span>Menor huella de carbono asociada al plástico</span>
                         </li>
                     </ul>
                 </div>
@@ -344,15 +360,58 @@
                 <div class="card-hover bg-gradient-to-br from-amber-400 to-yellow-600 rounded-2xl p-6 text-white text-center">
                     <div class="text-4xl mb-4">🥬</div>
                     <h3 class="text-xl font-bold mb-2">Lechugas</h3>
-                    <p class="text-yellow-100">Protección y organización en cultivos hidropónicos</p>
+                    <p class="text-yellow-100">Organización en cultivos hidropónicos y de hoja</p>
                 </div>
                 
                 <div class="card-hover bg-gradient-to-br from-emerald-400 to-green-600 rounded-2xl p-6 text-white text-center">
                     <div class="text-4xl mb-4">🥕</div>
                     <h3 class="text-xl font-bold mb-2">Hortalizas</h3>
-                    <p class="text-green-100">Versatilidad para todo tipo de vegetales</p>
+                    <p class="text-green-100">Versatilidad para múltiples cultivos</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Galería de fotos reales -->
+    <section id="galeria" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Fotos reales de la Hilaza Oscadri</h2>
+                <p class="text-xl text-gray-600">
+                    Muestra a tus clientes cómo se ve la hilaza en planta, en bodega y en el cultivo.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <img src="img/hilaza-bobinas.jpg" alt="Bobinas de hilaza biodegradable Oscadri listas para despacho" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-900 mb-1 text-lg">Presentación del producto</h3>
+                        <p class="text-sm text-gray-600">Bobinas de hilaza biodegradables listas para envío.</p>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <img src="img/hilaza-cultivo-tomate.jpg" alt="Hilaza biodegradable utilizada en tutoreo de cultivo de tomate" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-900 mb-1 text-lg">Uso en campo</h3>
+                        <p class="text-sm text-gray-600">Aplicación en tutoreo de tomates u otros cultivos.</p>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <img src="img/hilaza-cultivo-flores.jpg" alt="Hilaza biodegradable Oscadri en cultivos de flores o invernadero" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-900 mb-1 text-lg">Invernaderos y flores</h3>
+                        <p class="text-sm text-gray-600">Soporte delicado para floricultura e invernaderos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-sm text-gray-500 text-center mt-6">
+                👉 Sube tus fotos al repositorio en la carpeta <code>img/</code> usando estos nombres de archivo,
+                o ajusta los atributos <code>src</code> para apuntar a tus imágenes reales.
+            </p>
         </div>
     </section>
 
@@ -361,7 +420,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">Especificaciones Técnicas</h2>
-                <p class="text-xl text-gray-600">Datos precisos para profesionales del agro</p>
+                <p class="text-xl text-gray-600">Datos de referencia para profesionales del agro</p>
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -370,15 +429,15 @@
                     <div class="space-y-4">
                         <div class="flex justify-between items-center py-3 border-b border-gray-200">
                             <span class="font-medium text-gray-700">Material Base</span>
-                            <span class="text-green-600 font-semibold">Fibras Naturales Orgánicas</span>
+                            <span class="text-green-600 font-semibold">Fibras biodegradables</span>
                         </div>
                         <div class="flex justify-between items-center py-3 border-b border-gray-200">
                             <span class="font-medium text-gray-700">Resistencia a Tracción</span>
-                            <span class="text-green-600 font-semibold">45-60 kg/cm²</span>
+                            <span class="text-green-600 font-semibold">Rango 45-60 kg/cm²*</span>
                         </div>
                         <div class="flex justify-between items-center py-3 border-b border-gray-200">
                             <span class="font-medium text-gray-700">Tiempo de Degradación</span>
-                            <span class="text-green-600 font-semibold">60-90 días</span>
+                            <span class="text-green-600 font-semibold">60-90 días (referencial)</span>
                         </div>
                         <div class="flex justify-between items-center py-3 border-b border-gray-200">
                             <span class="font-medium text-gray-700">Resistencia UV</span>
@@ -386,13 +445,16 @@
                         </div>
                         <div class="flex justify-between items-center py-3 border-b border-gray-200">
                             <span class="font-medium text-gray-700">Absorción de Agua</span>
-                            <span class="text-green-600 font-semibold">< 12%</span>
+                            <span class="text-green-600 font-semibold">&lt; 12%</span>
                         </div>
                         <div class="flex justify-between items-center py-3">
                             <span class="font-medium text-gray-700">Rango de Temperatura</span>
                             <span class="text-green-600 font-semibold">-20°C a 60°C</span>
                         </div>
                     </div>
+                    <p class="mt-4 text-xs text-gray-500">
+                        *Valores referenciales. Usa tu ficha técnica oficial si manejas cifras exactas de laboratorio.
+                    </p>
                 </div>
                 
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
@@ -405,9 +467,9 @@
                             </div>
                             <p class="text-gray-600 mb-3">Ideal para cultivos medianos</p>
                             <div class="grid grid-cols-2 gap-4 text-sm">
-                                <div><strong>Longitud:</strong> 500m</div>
-                                <div><strong>Grosor:</strong> 2-3mm</div>
-                                <div><strong>Peso:</strong> 2.5kg</div>
+                                <div><strong>Longitud aprox.:</strong> 500 m</div>
+                                <div><strong>Peso:</strong> 2.5 kg</div>
+                                <div><strong>Grosor:</strong> 2-3 mm</div>
                                 <div><strong>Color:</strong> Natural</div>
                             </div>
                         </div>
@@ -416,9 +478,9 @@
                             <h4 class="font-bold text-gray-900 mb-2">Rollo Industrial</h4>
                             <p class="text-gray-600 mb-3">Para grandes extensiones</p>
                             <div class="grid grid-cols-2 gap-4 text-sm">
-                                <div><strong>Longitud:</strong> 1000m</div>
-                                <div><strong>Grosor:</strong> 3-4mm</div>
-                                <div><strong>Peso:</strong> 5kg</div>
+                                <div><strong>Longitud aprox.:</strong> 1000 m</div>
+                                <div><strong>Peso:</strong> 5 kg</div>
+                                <div><strong>Grosor:</strong> 3-4 mm</div>
                                 <div><strong>Color:</strong> Natural/Verde</div>
                             </div>
                         </div>
@@ -427,13 +489,16 @@
                             <h4 class="font-bold text-gray-900 mb-2">Rollo Premium</h4>
                             <p class="text-gray-600 mb-3">Máxima resistencia</p>
                             <div class="grid grid-cols-2 gap-4 text-sm">
-                                <div><strong>Longitud:</strong> 750m</div>
-                                <div><strong>Grosor:</strong> 4-5mm</div>
-                                <div><strong>Peso:</strong> 4kg</div>
+                                <div><strong>Longitud aprox.:</strong> 750 m</div>
+                                <div><strong>Peso:</strong> 4 kg</div>
+                                <div><strong>Grosor:</strong> 4-5 mm</div>
                                 <div><strong>Color:</strong> Natural</div>
                             </div>
                         </div>
                     </div>
+                    <p class="mt-4 text-xs text-gray-500">
+                        Ajusta estos datos a tus presentaciones reales si manejas otros pesos o metrados por rollo.
+                    </p>
                 </div>
             </div>
         </div>
@@ -444,7 +509,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">Lo que dicen nuestros clientes</h2>
-                <p class="text-xl text-gray-600">Experiencias reales de agricultores satisfechos</p>
+                <p class="text-xl text-gray-600">Experiencias de agricultores y productores que ya hicieron el cambio</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -466,8 +531,8 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <p class="text-gray-700 italic">
-                        "Desde que uso la hilaza biodegradable de Oscadri, he reducido mis costos operativos en un 35%. 
-                        Ya no tengo que preocuparme por limpiar residuos después de la cosecha."
+                        "Desde que uso la hilaza biodegradable de Oscadri, reduje mis costos de retiro de hilo
+                        y limpieza de lotes. El trabajo de poscosecha es mucho más rápido."
                     </p>
                 </div>
                 
@@ -489,8 +554,8 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <p class="text-gray-700 italic">
-                        "La resistencia es impresionante. Soporta perfectamente el peso de mis viñas durante toda la temporada, 
-                        y al final se degrada naturalmente enriqueciendo mi suelo."
+                        "La resistencia es excelente. Soporta el peso de mis viñas durante toda la temporada, 
+                        y al final no tengo montañas de plástico por recoger."
                     </p>
                 </div>
                 
@@ -501,7 +566,7 @@
                         </div>
                         <div>
                             <h4 class="font-bold text-gray-900">Jorge Ramírez</h4>
-                            <p class="text-gray-600 text-sm">Productor Orgánico - Antioquia</p>
+                            <p class="text-gray-600 text-sm">Productor orgánico - Antioquia</p>
                         </div>
                     </div>
                     <div class="text-yellow-400 mb-4">
@@ -512,8 +577,8 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <p class="text-gray-700 italic">
-                        "Como productor orgánico certificado, encontré en Oscadri el partner perfecto. 
-                        Su hilaza biodegradable me permite mantener mis certificaciones sin comprometer la calidad."
+                        "Como productor orgánico, necesitaba soluciones coherentes con mis certificaciones. 
+                        La hilaza biodegradable de Oscadri encaja perfecto con ese modelo."
                     </p>
                 </div>
             </div>
@@ -525,7 +590,7 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">Calculadora de Impacto Sostenible</h2>
-                <p class="text-xl text-gray-600">Descubre cuánto puedes ahorrar y ayudar al medio ambiente</p>
+                <p class="text-xl text-gray-600">Descubre cuánto ahorras y cómo reduces tu impacto ambiental</p>
             </div>
             
             <div class="bg-white rounded-2xl p-8 shadow-xl">
@@ -535,11 +600,11 @@
                         <div class="space-y-6">
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">Hectáreas de cultivo</label>
-                                <input type="number" id="hectareas" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Ej: 10">
+                                <input type="number" id="hectareas" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Ej: 10" min="0">
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Metros de hilo por hectárea</label>
-                                <input type="number" id="metros" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Ej: 1000">
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Kilos de hilaza por hectárea</label>
+                                <input type="number" id="kgPorHa" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Ej: 8" step="0.1" min="0">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">Ciclos de cultivo por año</label>
@@ -559,21 +624,25 @@
                     <div id="resultados" class="hidden">
                         <h3 class="text-2xl font-bold text-gray-900 mb-6">Tus resultados</h3>
                         <div class="space-y-4">
+                            <div class="bg-emerald-50 rounded-lg p-4">
+                                <div class="text-2xl font-bold text-emerald-600" id="kilos-totales">0 kg</div>
+                                <div class="text-sm text-gray-600">Consumo total de hilaza por año</div>
+                            </div>
                             <div class="bg-green-50 rounded-lg p-4">
                                 <div class="text-2xl font-bold calculator-result" id="ahorro-economico">$0</div>
-                                <div class="text-sm text-gray-600">Ahorro económico anual</div>
+                                <div class="text-sm text-gray-600">Ahorro económico anual estimado</div>
                             </div>
                             <div class="bg-blue-50 rounded-lg p-4">
                                 <div class="text-2xl font-bold text-blue-600" id="residuos-evitados">0 kg</div>
-                                <div class="text-sm text-gray-600">Residuos plásticos evitados</div>
+                                <div class="text-sm text-gray-600">Residuos plásticos evitados al año</div>
                             </div>
                             <div class="bg-purple-50 rounded-lg p-4">
                                 <div class="text-2xl font-bold text-purple-600" id="co2-reducido">0 kg</div>
-                                <div class="text-sm text-gray-600">CO₂ no emitido</div>
+                                <div class="text-sm text-gray-600">CO₂ no emitido (equivalente)</div>
                             </div>
                             <div class="bg-amber-50 rounded-lg p-4">
-                                <div class="text-2xl font-bold text-amber-600" id="horas-ahorradas">0 hrs</div>
-                                <div class="text-sm text-gray-600">Horas de trabajo ahorradas</div>
+                                <div class="text-2xl font-bold text-amber-600" id="horas-ahorradas">0 h</div>
+                                <div class="text-sm text-gray-600">Horas de trabajo ahorradas al año</div>
                             </div>
                         </div>
                     </div>
@@ -583,6 +652,14 @@
                     <h4 class="text-xl font-bold text-gray-900 mb-4">Visualización de tu impacto</h4>
                     <canvas id="impactoChart" style="height: 300px;"></canvas>
                 </div>
+
+                <p class="mt-4 text-xs text-gray-500 leading-relaxed">
+                    * La calculadora usa valores de referencia que puedes ajustar en el código:
+                    <span class="font-semibold">precio hilo tradicional:</span> <span id="precio-pp-ref"></span> por kg,
+                    <span class="font-semibold">precio base hilaza biodegradable:</span> el mismo valor por kg,
+                    <span class="font-semibold">4 horas</span> de retiro de hilo por hectárea y ciclo
+                    y <span class="font-semibold">3,6 kg CO₂e</span> evitados por cada kilo de polipropileno reemplazado.
+                </p>
             </div>
         </div>
     </section>
@@ -689,11 +766,15 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <div class="text-2xl font-bold text-green-400 mb-4">
-                        <i class="fas fa-leaf mr-2"></i>Oscadri Bio
+                    <div class="flex items-center mb-4">
+                        <img src="img/logo-oscadri.png" alt="Logo Hilos Oscadri" class="h-10 w-auto mr-3">
+                        <div>
+                            <div class="text-2xl font-bold text-green-400">Oscadri Bio</div>
+                            <p class="text-xs text-gray-400">Hilaza Biodegradable Oscadri</p>
+                        </div>
                     </div>
                     <p class="text-gray-400 mb-4">
-                        Liderando la revolución sostenible en agricultura con más de 26 años de experiencia.
+                        Liderando la sostenibilidad en agricultura con más de 26 años de experiencia en hilos e hilazas.
                     </p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-green-400 transition duration-300">
@@ -711,7 +792,7 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Productos</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-green-400 transition duration-300">Hilaza Biodegradable</a></li>
+                        <li><a href="#productos" class="hover:text-green-400 transition duration-300">Hilaza Biodegradable</a></li>
                         <li><a href="#" class="hover:text-green-400 transition duration-300">Hilos Tradicionales</a></li>
                         <li><a href="#" class="hover:text-green-400 transition duration-300">Soluciones Personalizadas</a></li>
                         <li><a href="#" class="hover:text-green-400 transition duration-300">Certificaciones</a></li>
@@ -721,9 +802,9 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Soporte</h4>
                     <ul class="space-y-2 text-gray-400">
+                        <li><a href="#calculadora" class="hover:text-green-400 transition duration-300">Calculadora</a></li>
                         <li><a href="#" class="hover:text-green-400 transition duration-300">Guías de Uso</a></li>
                         <li><a href="#" class="hover:text-green-400 transition duration-300">Asesoría Técnica</a></li>
-                        <li><a href="#" class="hover:text-green-400 transition duration-300">Calculadora</a></li>
                         <li><a href="#" class="hover:text-green-400 transition duration-300">FAQ</a></li>
                     </ul>
                 </div>
@@ -739,18 +820,38 @@
             </div>
             
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Distribuidora Oscadri. Todos los derechos reservados. | Liderando la sostenibilidad agrícola desde 1997</p>
+                <p>&copy; 2025 Distribuidora Oscadri. Todos los derechos reservados. | Liderando la sostenibilidad agrícola desde 1997</p>
             </div>
         </div>
     </footer>
 
     <script>
+        // --- Parámetros de referencia para la calculadora ---
+        // Precio de referencia de hilo tradicional de polipropileno por kg (COP)
+        const PRECIO_PP_KG = 16626; 
+        // Precio de referencia de hilaza biodegradable Oscadri por kg (puedes ajustarlo)
+        const PRECIO_BIO_KG = 16626;
+        // Horas de retiro de hilo tradicional por hectárea y ciclo
+        const HORAS_RETIRO_POR_HECTAREA = 4;
+        // Costo aproximado de una hora de trabajo (cercano al salario mínimo 2025)
+        const COSTO_HORA_TRABAJO = 7190;
+        // Factor de emisiones de CO₂ de polipropileno: kg CO₂e por kg de PP
+        const FACTOR_CO2_PP = 3.6;
+
+        const formatoCOP = new Intl.NumberFormat('es-CO', {
+            style: 'currency',
+            currency: 'COP',
+            maximumFractionDigits: 0
+        });
+
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const href = this.getAttribute('href');
+                if (!href || href === '#') return;
+                const target = document.querySelector(href);
                 if (target) {
+                    e.preventDefault();
                     target.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
@@ -759,42 +860,55 @@
             });
         });
 
-        // Mobile menu toggle
+        // Mobile menu toggle (placeholder)
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            // Add mobile menu functionality here
             console.log('Mobile menu clicked');
         });
 
         // Calculadora de sostenibilidad
         function calcularImpacto() {
             const hectareas = parseFloat(document.getElementById('hectareas').value) || 0;
-            const metros = parseFloat(document.getElementById('metros').value) || 0;
+            const kgPorHa = parseFloat(document.getElementById('kgPorHa').value) || 0;
             const ciclos = parseFloat(document.getElementById('ciclos').value) || 1;
             
-            if (hectareas === 0 || metros === 0) {
-                alert('Por favor, completa todos los campos para calcular el impacto.');
+            if (hectareas <= 0 || kgPorHa <= 0 || ciclos <= 0) {
+                alert('Por favor, completa todos los campos con valores mayores a cero para calcular el impacto.');
                 return;
             }
             
-            // Cálculos basados en estimaciones realistas
-            const metrosTotal = hectareas * metros * ciclos;
-            const ahorroEconomico = metrosTotal * 0.15; // $0.15 por metro ahorrado
-            const residuosEvitados = metrosTotal * 0.002; // 2g por metro de residuo evitado
-            const co2Reducido = metrosTotal * 0.003; // 3g de CO2 por metro
-            const horasAhorradas = (metrosTotal / 1000) * 2; // 2 horas por cada 1000m de limpieza evitada
-            
+            // Kilos totales de hilaza usados al año
+            const kilosTotales = hectareas * kgPorHa * ciclos;
+
+            // Costos de material
+            const costoMaterialPP = kilosTotales * PRECIO_PP_KG;
+            const costoMaterialBio = kilosTotales * PRECIO_BIO_KG;
+
+            // Horas y costo de retiro de hilo tradicional
+            const horasAhorradas = hectareas * ciclos * HORAS_RETIRO_POR_HECTAREA;
+            const costoRetiro = horasAhorradas * COSTO_HORA_TRABAJO;
+
+            const costoTotalPP = costoMaterialPP + costoRetiro;
+            const costoTotalBio = costoMaterialBio; // asumimos que no hay retiro de hilo biodegradable
+
+            const ahorroEconomico = Math.max(costoTotalPP - costoTotalBio, 0);
+
+            // Impacto ambiental
+            const residuosEvitados = kilosTotales; // kg de plástico que se dejan de usar
+            const co2Reducido = residuosEvitados * FACTOR_CO2_PP;
+
             // Mostrar resultados
             document.getElementById('resultados').classList.remove('hidden');
-            document.getElementById('ahorro-economico').textContent = `$${ahorroEconomico.toLocaleString('es-CO')}`;
+            document.getElementById('kilos-totales').textContent = `${kilosTotales.toFixed(1)} kg/año`;
+            document.getElementById('ahorro-economico').textContent = formatoCOP.format(ahorroEconomico);
             document.getElementById('residuos-evitados').textContent = `${residuosEvitados.toFixed(1)} kg`;
-            document.getElementById('co2-reducido').textContent = `${co2Reducido.toFixed(1)} kg`;
-            document.getElementById('horas-ahorradas').textContent = `${horasAhorradas.toFixed(1)} hrs`;
+            document.getElementById('co2-reducido').textContent = `${co2Reducido.toFixed(1)} kg CO₂e`;
+            document.getElementById('horas-ahorradas').textContent = `${horasAhorradas.toFixed(1)} h`;
             
             // Mostrar gráfico
             mostrarGrafico(ahorroEconomico, residuosEvitados, co2Reducido, horasAhorradas);
         }
 
-        function mostrarGrafico(ahorro, residuos, co2, horas) {
+        function mostrarGrafico(ahorroEconomico, residuosEvitados, co2Reducido, horasAhorradas) {
             document.getElementById('impacto-visual').classList.remove('hidden');
             
             const ctx = document.getElementById('impactoChart').getContext('2d');
@@ -807,9 +921,19 @@
             window.impactoChart = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Ahorro Económico', 'Residuos Evitados', 'CO₂ Reducido', 'Horas Ahorradas'],
+                    labels: [
+                        'Ahorro económico (COP)',
+                        'Residuos evitados (kg)',
+                        'CO₂ reducido (kg CO₂e)',
+                        'Horas de trabajo ahorradas'
+                    ],
                     datasets: [{
-                        data: [ahorro/100, residuos*10, co2*10, horas*50],
+                        data: [
+                            ahorroEconomico || 0,
+                            residuosEvitados || 0,
+                            co2Reducido || 0,
+                            horasAhorradas || 0
+                        ],
                         backgroundColor: [
                             '#10b981',
                             '#3b82f6',
@@ -835,13 +959,19 @@
                         tooltip: {
                             callbacks: {
                                 label: function(context) {
-                                    const labels = [
-                                        `Ahorro: $${ahorro.toLocaleString('es-CO')}`,
-                                        `Residuos: ${residuos.toFixed(1)} kg`,
-                                        `CO₂: ${co2.toFixed(1)} kg`,
-                                        `Horas: ${horas.toFixed(1)} hrs`
-                                    ];
-                                    return labels[context.dataIndex];
+                                    const index = context.dataIndex;
+                                    switch (index) {
+                                        case 0:
+                                            return `Ahorro: ${formatoCOP.format(ahorroEconomico)}`;
+                                        case 1:
+                                            return `Residuos evitados: ${residuosEvitados.toFixed(1)} kg`;
+                                        case 2:
+                                            return `CO₂ reducido: ${co2Reducido.toFixed(1)} kg CO₂e`;
+                                        case 3:
+                                            return `Horas ahorradas: ${horasAhorradas.toFixed(1)} h`;
+                                        default:
+                                            return '';
+                                    }
                                 }
                             }
                         }
@@ -872,7 +1002,7 @@
             observer.observe(el);
         });
 
-        // Counter animations
+        // Counter animations (por si decides usar contadores en el futuro)
         function animateCounters() {
             const counters = document.querySelectorAll('[data-counter]');
             counters.forEach(counter => {
@@ -890,8 +1020,12 @@
             });
         }
 
-        // Initialize animations when page loads
+        // Initialize on load
         window.addEventListener('load', () => {
+            const precioRef = document.getElementById('precio-pp-ref');
+            if (precioRef) {
+                precioRef.textContent = formatoCOP.format(PRECIO_PP_KG);
+            }
             setTimeout(animateCounters, 1000);
         });
     </script>
