@@ -1,910 +1,864 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hilaza Biodegradable Oscadri - Revolución Sostenible en Agricultura</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        * {
-            font-family: 'Inter', sans-serif;
-        }
-        
-        .hero-gradient {
-            background: linear-gradient(135deg, #065f46 0%, #047857 25%, #059669 50%, #10b981 75%, #34d399 100%);
-        }
-        
-        .floating-animation {
-            animation: floating 3s ease-in-out infinite;
-        }
-        
-        @keyframes floating {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        .slide-in-left {
-            animation: slideInLeft 1s ease-out;
-        }
-        
-        @keyframes slideInLeft {
-            from { transform: translateX(-100%); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        
-        .slide-in-right {
-            animation: slideInRight 1s ease-out;
-        }
-        
-        @keyframes slideInRight {
-            from { transform: translateX(100%); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        
-        .fade-in-up {
-            animation: fadeInUp 1s ease-out;
-        }
-        
-        @keyframes fadeInUp {
-            from { transform: translateY(30px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        
-        .pulse-green {
-            animation: pulseGreen 2s infinite;
-        }
-        
-        @keyframes pulseGreen {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
-        }
-        
-        .eco-pattern {
-            background-image: 
-                radial-gradient(circle at 20% 50%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(52, 211, 153, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 80%, rgba(6, 95, 70, 0.1) 0%, transparent 50%);
-        }
-        
-        .calculator-result {
-            background: linear-gradient(45deg, #10b981, #34d399);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hilaza Biodegradable Oscadri | Página oficial</title>
+  <meta name="description" content="Hilaza biodegradable de alto desempeño para el sector agroindustrial, producida por Hilos Oscadri S.A.S en Itagüí, Antioquia, Colombia." />
+
+  <style>
+    :root {
+      --primary: #1b5e20;
+      --primary-light: #4caf50;
+      --accent: #fdd835;
+      --bg: #f5f6f8;
+      --text: #222222;
+      --muted: #666666;
+      --white: #ffffff;
+      --shadow-soft: 0 10px 30px rgba(0,0,0,0.06);
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --radius-pill: 999px;
+      --max-width: 1080px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top left, #e8f5e9 0, #f5f6f8 45%, #ffffff 100%);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.8rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.2rem;
+    }
+
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .logo-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 20%, var(--primary-light), var(--primary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--white);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.9rem;
+    }
+
+    .brand-text span:first-child {
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      color: var(--primary);
+    }
+
+    .brand-text span:last-child {
+      font-weight: 500;
+      color: var(--muted);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.2rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      padding: 0.3rem 0.6rem;
+      border-radius: 999px;
+      color: var(--muted);
+      transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease;
+    }
+
+    .nav-links a:hover {
+      background: rgba(76, 175, 80, 0.08);
+      color: var(--primary);
+      transform: translateY(-1px);
+    }
+
+    .nav .cta-small {
+      display: none;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .section {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2.8rem 1.25rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+      gap: 2.4rem;
+      align-items: center;
+      padding-top: 2.6rem;
+      padding-bottom: 2.6rem;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.9rem;
+      border-radius: var(--radius-pill);
+      background: rgba(76, 175, 80, 0.08);
+      color: var(--primary);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      margin-bottom: 0.9rem;
+    }
+
+    .chip-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-size: clamp(2.1rem, 3vw, 2.5rem);
+      margin: 0 0 0.7rem;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 1.4rem;
+      max-width: 36rem;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.7rem;
+    }
+
+    .badge {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.7rem 1.3rem;
+      border-radius: var(--radius-pill);
+      border: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition:
+        transform 0.12s ease,
+        box-shadow 0.12s ease,
+        background 0.15s ease,
+        opacity 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2e7d32, #43a047);
+      color: var(--white);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(0, 0, 0, 0.14);
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--primary);
+    }
+
+    .btn-outline:hover {
+      background: #f1f8e9;
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: #ffffff;
+    }
+
+    .btn-whatsapp:hover {
+      background: #1ebe5d;
+    }
+
+    .cta-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .hero-visual {
+      border-radius: var(--radius-lg);
+      background: radial-gradient(circle at top, #c8e6c9, #e8f5e9 40%, #ffffff 100%);
+      padding: 1.6rem 1.5rem 1.3rem;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-pill {
+      font-size: 0.75rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.9);
+      margin-bottom: 1.1rem;
+    }
+
+    .hero-visual h2 {
+      font-size: 1.1rem;
+      margin: 0 0 0.3rem;
+    }
+
+    .hero-visual p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 0 0 1.1rem;
+    }
+
+    .badge-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.7rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .mini-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: var(--radius-md);
+      padding: 0.6rem 0.7rem;
+      font-size: 0.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .mini-card span:first-child {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .mini-card span:last-child {
+      color: var(--muted);
+    }
+
+    .hero-tagline {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2.1rem;
+    }
+
+    .section-title h2 {
+      font-size: 1.6rem;
+      margin: 0 0 0.3rem;
+      letter-spacing: -0.02em;
+    }
+
+    .section-title p {
+      margin: 0;
+      font-size: 0.98rem;
+      color: var(--muted);
+      max-width: 34rem;
+      margin-inline: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.4rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.97);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.1rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(0, 0, 0, 0.03);
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .card-tag {
+      display: inline-flex;
+      padding: 0.15rem 0.6rem;
+      border-radius: var(--radius-pill);
+      background: rgba(76, 175, 80, 0.07);
+      color: var(--primary);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.4rem;
+    }
+
+    .card-list {
+      padding-left: 1.1rem;
+      margin: 0.3rem 0 0;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .card-list li + li {
+      margin-top: 0.15rem;
+    }
+
+    .about {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: var(--radius-lg);
+      padding: 1.8rem 1.6rem;
+      box-shadow: var(--shadow-soft);
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+      gap: 1.6rem;
+      align-items: center;
+    }
+
+    .about h2 {
+      margin-top: 0;
+      margin-bottom: 0.6rem;
+    }
+
+    .about p {
+      font-size: 0.93rem;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+
+    .about-highlight {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      font-size: 0.85rem;
+    }
+
+    .about-highlight span {
+      padding: 0.25rem 0.7rem;
+      border-radius: var(--radius-pill);
+      background: #f1f8e9;
+      color: var(--primary);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .about-meta {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .about-right {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .stat {
+      background: #f1f8e9;
+      border-radius: var(--radius-md);
+      padding: 0.7rem 0.9rem;
+      font-size: 0.9rem;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.3rem;
+      color: var(--primary);
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+      gap: 1.8rem;
+      align-items: flex-start;
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 1.4rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contact-card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.8rem;
+      font-size: 0.9rem;
+    }
+
+    .contact-item span {
+      display: block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--muted);
+      margin-bottom: 0.1rem;
+    }
+
+    .contact-item strong {
+      font-weight: 600;
+    }
+
+    footer {
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+      padding: 1.2rem 1.25rem 1.6rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 0.9rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .spark-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.82rem;
+    }
+
+    .spark-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* Responsive */
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-visual {
+        order: -1;
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .about {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .contact {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .nav-links {
+        display: none;
+      }
+
+      .nav .cta-small {
+        display: inline-flex;
+      }
+
+      .section {
+        padding-inline: 1rem;
+      }
+
+      .section-title h2 {
+        font-size: 1.4rem;
+      }
+
+      .grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero {
+        padding-top: 1.6rem;
+      }
+
+      .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        transition: none !important;
+      }
+    }
+  </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <div class="text-2xl font-bold text-green-600">
-                        <i class="fas fa-leaf mr-2"></i>Oscadri Bio
-                    </div>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#inicio" class="text-gray-700 hover:text-green-600 transition duration-300">Inicio</a>
-                    <a href="#beneficios" class="text-gray-700 hover:text-green-600 transition duration-300">Beneficios</a>
-                    <a href="#productos" class="text-gray-700 hover:text-green-600 transition duration-300">Productos</a>
-                    <a href="#calculadora" class="text-gray-700 hover:text-green-600 transition duration-300">Calculadora</a>
-                    <a href="#contacto" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300">Contacto</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-gray-700">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
-            </div>
+<body>
+  <div class="page">
+    <header>
+      <nav class="nav">
+        <a href="#inicio" class="logo-wrapper">
+          <div class="logo-circle">O</div>
+          <div class="brand-text">
+            <span>Hilos Oscadri</span>
+            <span>Hilaza Biodegradable</span>
+          </div>
+        </a>
+        <div class="nav-links">
+          <a href="#beneficios">Beneficios</a>
+          <a href="#usos">Usos</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#contacto">Contacto</a>
         </div>
-    </nav>
+        <a href="#contacto" class="btn btn-primary cta-small">Cotizar ahora</a>
+      </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero-gradient min-h-screen flex items-center pt-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="text-white slide-in-left">
-                    <h1 class="text-5xl lg:text-6xl font-bold mb-6">
-                        Hilaza <span class="text-green-200">Biodegradable</span><br>
-                        El Futuro Sostenible
-                    </h1>
-                    <p class="text-xl mb-8 text-green-100">
-                        Revoluciona tu agricultura con nuestra hilaza 100% biodegradable. 
-                        Resistencia excepcional, descomposición natural, y cero impacto ambiental.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button class="bg-white text-green-600 px-8 py-4 rounded-full font-semibold hover:bg-green-50 transition duration-300 pulse-green">
-                            <i class="fas fa-seedling mr-2"></i>Conocer Más
-                        </button>
-                        <button class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-green-600 transition duration-300">
-                            <i class="fas fa-phone mr-2"></i>Contactar Ahora
-                        </button>
-                    </div>
-                </div>
-                <div class="slide-in-right">
-                    <div class="relative">
-                        <div class="floating-animation bg-white bg-opacity-20 rounded-3xl p-8 backdrop-blur-sm">
-                            <div class="text-center">
-                                <div class="text-6xl text-green-200 mb-4">
-                                    <i class="fas fa-leaf"></i>
-                                </div>
-                                <h3 class="text-2xl font-bold text-white mb-4">100% Biodegradable</h3>
-                                <div class="grid grid-cols-2 gap-4 text-center">
-                                    <div class="bg-white bg-opacity-20 rounded-xl p-4">
-                                        <div class="text-2xl font-bold text-green-200">60-90</div>
-                                        <div class="text-sm text-green-100">Días degradación</div>
-                                    </div>
-                                    <div class="bg-white bg-opacity-20 rounded-xl p-4">
-                                        <div class="text-2xl font-bold text-green-200">100%</div>
-                                        <div class="text-sm text-green-100">Natural</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <main id="inicio">
+      <section class="section hero">
+        <div>
+          <div class="chip">
+            <span class="chip-dot"></span>
+            <span>Hilaza biodegradable para el campo</span>
+          </div>
+          <h1>Hilaza Biodegradable Oscadri</h1>
+          <p class="hero-subtitle">
+            Hilo biodegradable de alto desempeño, pensado para el sector agroindustrial que busca reducir el plástico en sus cultivos sin sacrificar resistencia.
+          </p>
+          <div class="hero-badges">
+            <span class="badge">Biodegradable y compostable</span>
+            <span class="badge">Especial para agricultura</span>
+            <span class="badge">Fabricada en Antioquia, Colombia</span>
+          </div>
+          <div class="hero-cta">
+            <!-- Reemplaza TU_NUMERO por tu número de WhatsApp, por ejemplo 573104469935 -->
+            <a href="https://wa.me/TU_NUMERO" class="btn btn-primary btn-whatsapp" target="_blank" rel="noopener">
+              Pedir por WhatsApp
+            </a>
+            <a href="#beneficios" class="btn btn-outline">
+              Ver beneficios
+            </a>
+            <p class="cta-note">
+              Sustituye <strong>TU_NUMERO</strong> por tu número de WhatsApp en el enlace.
+            </p>
+          </div>
         </div>
-    </section>
 
-    <!-- Beneficios Section -->
-    <section id="beneficios" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in-up">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">¿Por qué elegir nuestra Hilaza Biodegradable?</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Más de 26 años de experiencia nos respaldan en la creación de soluciones textiles innovadoras y sostenibles
-                </p>
+        <div class="hero-visual">
+          <div class="hero-pill">
+            <span class="chip-dot"></span>
+            <span>Hecho por Hilos Oscadri S.A.S</span>
+          </div>
+          <h2>Una hilaza que cuida tus cultivos y el entorno</h2>
+          <p>
+            Transformamos fibras naturales y recuperadas en un hilo que soporta la jornada en campo y luego se integra de forma segura al ambiente.
+          </p>
+          <div class="badge-grid">
+            <div class="mini-card">
+              <span>Resistencia óptima</span>
+              <span>Soporta la tensión en tutorado y amarras agrícolas.</span>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card-hover bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 text-center">
-                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-recycle text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">100% Biodegradable</h3>
-                    <p class="text-gray-600">Se descompone naturalmente en 60-90 días, enriqueciendo el suelo sin dejar residuos tóxicos.</p>
-                </div>
-                
-                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 text-center">
-                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-dumbbell text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Alta Resistencia</h3>
-                    <p class="text-gray-600">Soporta cargas pesadas manteniendo la integridad durante todo el ciclo de cultivo.</p>
-                </div>
-                
-                <div class="card-hover bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 text-center">
-                    <div class="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-coins text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Ahorro Económico</h3>
-                    <p class="text-gray-600">Elimina costos de remoción y limpieza, reduciendo hasta 40% los gastos operativos.</p>
-                </div>
-                
-                <div class="card-hover bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-8 text-center">
-                    <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-shield-alt text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Resistente al Clima</h3>
-                    <p class="text-gray-600">Mantiene propiedades bajo condiciones extremas de humedad, sol y temperatura.</p>
-                </div>
-                
-                <div class="card-hover bg-gradient-to-br from-teal-50 to-green-50 rounded-2xl p-8 text-center">
-                    <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-seedling text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Enriquece el Suelo</h3>
-                    <p class="text-gray-600">Al degradarse, aporta nutrientes orgánicos que mejoran la calidad del suelo.</p>
-                </div>
-                
-                <div class="card-hover bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-8 text-center">
-                    <div class="w-16 h-16 bg-rose-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-certificate text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Certificado Ecológico</h3>
-                    <p class="text-gray-600">Cumple con estándares internacionales de sostenibilidad y agricultura orgánica.</p>
-                </div>
+            <div class="mini-card">
+              <span>Seguro para la fauna</span>
+              <span>Sin bordes cortantes ni residuos plásticos duros.</span>
             </div>
+            <div class="mini-card">
+              <span>Menos residuos</span>
+              <span>Ayuda a reducir el uso de polipropileno en el cultivo.</span>
+            </div>
+            <div class="mini-card">
+              <span>Producción local</span>
+              <span>Desarrollado y producido en Antioquia.</span>
+            </div>
+          </div>
+          <div class="hero-tagline">
+            <span class="dot"></span>
+            <span>Ideal para agricultores que quieren dar un giro sostenible a sus cultivos.</span>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Comparativa Section -->
-    <section class="py-20 eco-pattern">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Comparativa: Tradicional vs Biodegradable</h2>
-                <p class="text-xl text-gray-600">Descubre las ventajas de hacer el cambio</p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div class="bg-red-50 rounded-2xl p-8 border-2 border-red-200">
-                    <div class="text-center mb-6">
-                        <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-times text-white text-2xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-red-700">Hilo Tradicional</h3>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex items-center text-red-700">
-                            <i class="fas fa-times-circle mr-3"></i>
-                            <span>No se degrada naturalmente</span>
-                        </li>
-                        <li class="flex items-center text-red-700">
-                            <i class="fas fa-times-circle mr-3"></i>
-                            <span>Contamina el suelo y agua</span>
-                        </li>
-                        <li class="flex items-center text-red-700">
-                            <i class="fas fa-times-circle mr-3"></i>
-                            <span>Requiere remoción manual</span>
-                        </li>
-                        <li class="flex items-center text-red-700">
-                            <i class="fas fa-times-circle mr-3"></i>
-                            <span>Costos adicionales de limpieza</span>
-                        </li>
-                        <li class="flex items-center text-red-700">
-                            <i class="fas fa-times-circle mr-3"></i>
-                            <span>Impacto ambiental negativo</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="bg-green-50 rounded-2xl p-8 border-2 border-green-200">
-                    <div class="text-center mb-6">
-                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-check text-white text-2xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-green-700">Hilaza Biodegradable Oscadri</h3>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex items-center text-green-700">
-                            <i class="fas fa-check-circle mr-3"></i>
-                            <span>Degradación natural en 60-90 días</span>
-                        </li>
-                        <li class="flex items-center text-green-700">
-                            <i class="fas fa-check-circle mr-3"></i>
-                            <span>Enriquece el suelo con nutrientes</span>
-                        </li>
-                        <li class="flex items-center text-green-700">
-                            <i class="fas fa-check-circle mr-3"></i>
-                            <span>Sin necesidad de remoción</span>
-                        </li>
-                        <li class="flex items-center text-green-700">
-                            <i class="fas fa-check-circle mr-3"></i>
-                            <span>Ahorro del 40% en costos</span>
-                        </li>
-                        <li class="flex items-center text-green-700">
-                            <i class="fas fa-check-circle mr-3"></i>
-                            <span>Huella de carbono negativa</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <section id="beneficios" class="section">
+        <div class="section-title">
+          <h2>¿Por qué elegir esta hilaza?</h2>
+          <p>
+            Más que un hilo, es una solución pensada para el agro: reduce residuos, facilita el trabajo en campo y aporta a una producción más responsable.
+          </p>
         </div>
-    </section>
+        <div class="grid">
+          <article class="card">
+            <span class="card-tag">Sostenibilidad</span>
+            <h3>Se descompone sin dejar plásticos</h3>
+            <p>
+              Formulada para biodegradarse en condiciones controladas, minimizando el impacto sobre el suelo y los ecosistemas donde se utiliza.
+            </p>
+          </article>
+          <article class="card">
+            <span class="card-tag">Desempeño</span>
+            <h3>Resistencia adecuada para el cultivo</h3>
+            <p>
+              Diseñada para soportar la tensión y el peso de plantas y estructuras agrícolas durante su ciclo productivo.
+            </p>
+          </article>
+          <article class="card">
+            <span class="card-tag">Valor</span>
+            <h3>Aliado para una agricultura moderna</h3>
+            <p>
+              Permite cumplir exigencias ambientales y de certificaciones, sin complicar el día a día en finca.
+            </p>
+          </article>
+        </div>
+      </section>
 
-    <!-- Aplicaciones Section -->
-    <section id="productos" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Aplicaciones en Cultivos</h2>
-                <p class="text-xl text-gray-600">Versátil y eficaz para todo tipo de agricultura</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="card-hover bg-gradient-to-br from-green-400 to-green-600 rounded-2xl p-6 text-white text-center">
-                    <div class="text-4xl mb-4">🍅</div>
-                    <h3 class="text-xl font-bold mb-2">Tomates</h3>
-                    <p class="text-green-100">Soporte perfecto para tutoreo y amarre de ramas pesadas</p>
-                </div>
-                
-                <div class="card-hover bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl p-6 text-white text-center">
-                    <div class="text-4xl mb-4">🌽</div>
-                    <h3 class="text-xl font-bold mb-2">Maíz</h3>
-                    <p class="text-orange-100">Ideal para refuerzo en zonas de viento fuerte</p>
-                </div>
-                
-                <div class="card-hover bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl p-6 text-white text-center">
-                    <div class="text-4xl mb-4">🍇</div>
-                    <h3 class="text-xl font-bold mb-2">Viñedos</h3>
-                    <p class="text-purple-100">Amarre de vides con degradación controlada</p>
-                </div>
-                
-                <div class="card-hover bg-gradient-to-br from-red-400 to-pink-500 rounded-2xl p-6 text-white text-center">
-                    <div class="text-4xl mb-4">🌹</div>
-                    <h3 class="text-xl font-bold mb-2">Flores</h3>
-                    <p class="text-red-100">Soporte delicado para tallos y ramas florales</p>
-                </div>
-                
-                <div class="card-hover bg-gradient-to-br from-indigo-400 to-blue-600 rounded-2xl p-6 text-white text-center">
-                    <div class="text-4xl mb-4">🥒</div>
-                    <h3 class="text-xl font-bold mb-2">Pepinos</h3>
-                    <p class="text-blue-100">Guía vertical con resistencia y flexibilidad</p>
-                </div>
-                
-                <div class="card-hover bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl p-6 text-white text-center">
-                    <div class="text-4xl mb-4">🌶️</div>
-                    <h3 class="text-xl font-bold mb-2">Pimientos</h3>
-                    <p class="text-teal-100">Soporte robusto para plantas cargadas</p>
-                </div>
-                
-                <div class="card-hover bg-gradient-to-br from-amber-400 to-yellow-600 rounded-2xl p-6 text-white text-center">
-                    <div class="text-4xl mb-4">🥬</div>
-                    <h3 class="text-xl font-bold mb-2">Lechugas</h3>
-                    <p class="text-yellow-100">Protección y organización en cultivos hidropónicos</p>
-                </div>
-                
-                <div class="card-hover bg-gradient-to-br from-emerald-400 to-green-600 rounded-2xl p-6 text-white text-center">
-                    <div class="text-4xl mb-4">🥕</div>
-                    <h3 class="text-xl font-bold mb-2">Hortalizas</h3>
-                    <p class="text-green-100">Versatilidad para todo tipo de vegetales</p>
-                </div>
-            </div>
+      <section id="usos" class="section">
+        <div class="section-title">
+          <h2>Usos recomendados</h2>
+          <p>
+            La hilaza biodegradable está pensada para varias labores dentro del sector agroindustrial.
+          </p>
         </div>
-    </section>
+        <div class="grid">
+          <article class="card">
+            <h3>Tutorado y amarre de cultivos</h3>
+            <ul class="card-list">
+              <li>Hortalizas, frutales y cultivos en invernadero.</li>
+              <li>Sistemas de espaldera y conducción de plantas.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Atados y empaques ligeros</h3>
+            <ul class="card-list">
+              <li>Fardos livianos y empaques temporales.</li>
+              <li>Etiquetado y señalización de lotes.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Proyectos sostenibles</h3>
+            <ul class="card-list">
+              <li>Fincas que buscan reducir el plástico de un solo uso.</li>
+              <li>Programas de agricultura regenerativa y orgánica.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-    <!-- Especificaciones Técnicas -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Especificaciones Técnicas</h2>
-                <p class="text-xl text-gray-600">Datos precisos para profesionales del agro</p>
+      <section id="nosotros" class="section">
+        <div class="about">
+          <div>
+            <h2>Sobre Hilos Oscadri S.A.S</h2>
+            <p>
+              Somos una empresa colombiana especializada en la transformación de hilos e hilazas para diferentes aplicaciones textiles y agrícolas, con más de dos décadas de experiencia en el mercado.
+            </p>
+            <p>
+              Desde nuestros inicios hemos apostado por soluciones innovadoras que acompañen el crecimiento del sector agroindustrial y textil en Antioquia y el resto del país.
+            </p>
+            <div class="about-highlight">
+              <span>Experiencia desde 1997*</span>
+              <span>Empresa pyme colombiana</span>
+              <span>Enfoque en soluciones sostenibles</span>
             </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Composición y Propiedades</h3>
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
-                            <span class="font-medium text-gray-700">Material Base</span>
-                            <span class="text-green-600 font-semibold">Fibras Naturales Orgánicas</span>
-                        </div>
-                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
-                            <span class="font-medium text-gray-700">Resistencia a Tracción</span>
-                            <span class="text-green-600 font-semibold">45-60 kg/cm²</span>
-                        </div>
-                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
-                            <span class="font-medium text-gray-700">Tiempo de Degradación</span>
-                            <span class="text-green-600 font-semibold">60-90 días</span>
-                        </div>
-                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
-                            <span class="font-medium text-gray-700">Resistencia UV</span>
-                            <span class="text-green-600 font-semibold">6-8 meses</span>
-                        </div>
-                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
-                            <span class="font-medium text-gray-700">Absorción de Agua</span>
-                            <span class="text-green-600 font-semibold">< 12%</span>
-                        </div>
-                        <div class="flex justify-between items-center py-3">
-                            <span class="font-medium text-gray-700">Rango de Temperatura</span>
-                            <span class="text-green-600 font-semibold">-20°C a 60°C</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Presentaciones Disponibles</h3>
-                    <div class="space-y-6">
-                        <div class="bg-green-50 rounded-xl p-6">
-                            <div class="flex items-center justify-between mb-2">
-                                <h4 class="font-bold text-gray-900">Rollo Estándar</h4>
-                                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm">Popular</span>
-                            </div>
-                            <p class="text-gray-600 mb-3">Ideal para cultivos medianos</p>
-                            <div class="grid grid-cols-2 gap-4 text-sm">
-                                <div><strong>Longitud:</strong> 500m</div>
-                                <div><strong>Grosor:</strong> 2-3mm</div>
-                                <div><strong>Peso:</strong> 2.5kg</div>
-                                <div><strong>Color:</strong> Natural</div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-blue-50 rounded-xl p-6">
-                            <h4 class="font-bold text-gray-900 mb-2">Rollo Industrial</h4>
-                            <p class="text-gray-600 mb-3">Para grandes extensiones</p>
-                            <div class="grid grid-cols-2 gap-4 text-sm">
-                                <div><strong>Longitud:</strong> 1000m</div>
-                                <div><strong>Grosor:</strong> 3-4mm</div>
-                                <div><strong>Peso:</strong> 5kg</div>
-                                <div><strong>Color:</strong> Natural/Verde</div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-amber-50 rounded-xl p-6">
-                            <h4 class="font-bold text-gray-900 mb-2">Rollo Premium</h4>
-                            <p class="text-gray-600 mb-3">Máxima resistencia</p>
-                            <div class="grid grid-cols-2 gap-4 text-sm">
-                                <div><strong>Longitud:</strong> 750m</div>
-                                <div><strong>Grosor:</strong> 4-5mm</div>
-                                <div><strong>Peso:</strong> 4kg</div>
-                                <div><strong>Color:</strong> Natural</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <p class="about-meta">
+              *Dato orientativo. Ajusta el año exacto si es diferente.
+            </p>
+          </div>
+          <div class="about-right">
+            <div class="stat">
+              <strong>+20 años</strong>
+              de trayectoria transformando hilos e hilazas para diferentes sectores.
             </div>
+            <div class="stat">
+              <strong>Visión verde</strong>
+              Impulsar alternativas biodegradables que reemplacen productos tradicionales como el polipropileno en el campo.
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Testimonials -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Lo que dicen nuestros clientes</h2>
-                <p class="text-xl text-gray-600">Experiencias reales de agricultores satisfechos</p>
+      <section id="contacto" class="section">
+        <div class="contact">
+          <div class="contact-card">
+            <h3>¿Quieres cotizar o recibir más información?</h3>
+            <p>
+              Escríbenos por WhatsApp o correo para recibir asesoría personalizada sobre la hilaza biodegradable y otras soluciones de Hilos Oscadri.
+            </p>
+            <div class="hero-cta" style="margin-top: 0.8rem;">
+              <a href="https://wa.me/TU_NUMERO" class="btn btn-primary btn-whatsapp" target="_blank" rel="noopener">
+                Hablar por WhatsApp
+              </a>
+              <a href="mailto:tu-correo@oscadri.com" class="btn btn-outline">
+                Escribir correo
+              </a>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-user text-white"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-900">Carlos Méndez</h4>
-                            <p class="text-gray-600 text-sm">Agricultor - Cundinamarca</p>
-                        </div>
-                    </div>
-                    <div class="text-yellow-400 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-700 italic">
-                        "Desde que uso la hilaza biodegradable de Oscadri, he reducido mis costos operativos en un 35%. 
-                        Ya no tengo que preocuparme por limpiar residuos después de la cosecha."
-                    </p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-user text-white"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-900">María González</h4>
-                            <p class="text-gray-600 text-sm">Viticultora - Valle del Cauca</p>
-                        </div>
-                    </div>
-                    <div class="text-yellow-400 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-700 italic">
-                        "La resistencia es impresionante. Soporta perfectamente el peso de mis viñas durante toda la temporada, 
-                        y al final se degrada naturalmente enriqueciendo mi suelo."
-                    </p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-user text-white"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-900">Jorge Ramírez</h4>
-                            <p class="text-gray-600 text-sm">Productor Orgánico - Antioquia</p>
-                        </div>
-                    </div>
-                    <div class="text-yellow-400 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-700 italic">
-                        "Como productor orgánico certificado, encontré en Oscadri el partner perfecto. 
-                        Su hilaza biodegradable me permite mantener mis certificaciones sin comprometer la calidad."
-                    </p>
-                </div>
+            <p class="cta-note">
+              Reemplaza <strong>TU_NUMERO</strong> y <strong>tu-correo@oscadri.com</strong> por tus datos reales antes de publicar.
+            </p>
+          </div>
+          <div>
+            <div class="section-title" style="text-align: left; margin-bottom: 1rem;">
+              <h2 style="font-size: 1.2rem; margin-bottom: 0.3rem;">Datos de contacto</h2>
+              <p style="font-size: 0.9rem;">
+                Información orientativa. Completa aquí la dirección y teléfonos oficiales de tu empresa.
+              </p>
             </div>
+            <div class="contact-grid">
+              <div class="contact-item">
+                <span>Ubicación</span>
+                <strong>Itagüí, Antioquia – Colombia</strong>
+              </div>
+              <div class="contact-item">
+                <span>Teléfono</span>
+                <strong>+57 (XXX) XXX XXXX</strong>
+              </div>
+              <div class="contact-item">
+                <span>Sitio principal</span>
+                <strong>
+                  <a href="https://www.oscadri.com" target="_blank" rel="noopener">www.oscadri.com</a>
+                </strong>
+              </div>
+              <div class="contact-item">
+                <span>Redes sociales</span>
+                <strong>@hilos.oscadri</strong>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Calculadora de Sostenibilidad -->
-    <section id="calculadora" class="py-20 eco-pattern">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Calculadora de Impacto Sostenible</h2>
-                <p class="text-xl text-gray-600">Descubre cuánto puedes ahorrar y ayudar al medio ambiente</p>
-            </div>
-            
-            <div class="bg-white rounded-2xl p-8 shadow-xl">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Ingresa tus datos</h3>
-                        <div class="space-y-6">
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Hectáreas de cultivo</label>
-                                <input type="number" id="hectareas" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Ej: 10">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Metros de hilo por hectárea</label>
-                                <input type="number" id="metros" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Ej: 1000">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Ciclos de cultivo por año</label>
-                                <select id="ciclos" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
-                                    <option value="1">1 ciclo</option>
-                                    <option value="2">2 ciclos</option>
-                                    <option value="3">3 ciclos</option>
-                                    <option value="4">4 ciclos</option>
-                                </select>
-                            </div>
-                            <button onclick="calcularImpacto()" class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300">
-                                <i class="fas fa-calculator mr-2"></i>Calcular Impacto
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <div id="resultados" class="hidden">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Tus resultados</h3>
-                        <div class="space-y-4">
-                            <div class="bg-green-50 rounded-lg p-4">
-                                <div class="text-2xl font-bold calculator-result" id="ahorro-economico">$0</div>
-                                <div class="text-sm text-gray-600">Ahorro económico anual</div>
-                            </div>
-                            <div class="bg-blue-50 rounded-lg p-4">
-                                <div class="text-2xl font-bold text-blue-600" id="residuos-evitados">0 kg</div>
-                                <div class="text-sm text-gray-600">Residuos plásticos evitados</div>
-                            </div>
-                            <div class="bg-purple-50 rounded-lg p-4">
-                                <div class="text-2xl font-bold text-purple-600" id="co2-reducido">0 kg</div>
-                                <div class="text-sm text-gray-600">CO₂ no emitido</div>
-                            </div>
-                            <div class="bg-amber-50 rounded-lg p-4">
-                                <div class="text-2xl font-bold text-amber-600" id="horas-ahorradas">0 hrs</div>
-                                <div class="text-sm text-gray-600">Horas de trabajo ahorradas</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div id="impacto-visual" class="hidden mt-8">
-                    <h4 class="text-xl font-bold text-gray-900 mb-4">Visualización de tu impacto</h4>
-                    <canvas id="impactoChart" style="height: 300px;"></canvas>
-                </div>
-            </div>
+    <footer>
+      <div class="footer-inner">
+        <p>© <span id="year"></span> Hilos Oscadri S.A.S · Hilaza Biodegradable.</p>
+        <div class="footer-links">
+          <a href="https://www.oscadri.com" target="_blank" rel="noopener">Sitio corporativo</a>
+          <a href="https://www.genspark.ai/agents?id=b0c7b998-e959-4abb-aa45-676c29777c89" target="_blank" rel="noopener" class="spark-link">
+            <span class="spark-dot"></span>
+            Habla con nuestro asistente en Genspark
+          </a>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contacto" class="py-20 hero-gradient">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-white mb-4">¿Listo para hacer el cambio?</h2>
-                <p class="text-xl text-green-100">Contacta con nuestros expertos y descubre cómo revolucionar tu agricultura</p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div class="text-white">
-                    <h3 class="text-2xl font-bold mb-6">Información de Contacto</h3>
-                    <div class="space-y-6">
-                        <div class="flex items-center">
-                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-map-marker-alt text-white"></i>
-                            </div>
-                            <div>
-                                <div class="font-semibold">Dirección</div>
-                                <div class="text-green-100">Carrera 63 37-3, Itagüí, Antioquia</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-phone text-white"></i>
-                            </div>
-                            <div>
-                                <div class="font-semibold">Teléfono</div>
-                                <div class="text-green-100">301 281 2904</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-envelope text-white"></i>
-                            </div>
-                            <div>
-                                <div class="font-semibold">Email</div>
-                                <div class="text-green-100">info@oscadri.com</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-clock text-white"></i>
-                            </div>
-                            <div>
-                                <div class="font-semibold">Horario de Atención</div>
-                                <div class="text-green-100">Lun - Vie: 8:00 AM - 6:00 PM</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-2xl p-8">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Solicitar Información</h3>
-                    <form class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Nombre</label>
-                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Tu nombre">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Empresa</label>
-                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Nombre de tu empresa">
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="tu@email.com">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
-                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="+57 300 123 4567">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Tipo de cultivo</label>
-                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
-                                <option>Selecciona tu cultivo</option>
-                                <option>Tomates</option>
-                                <option>Viñedos</option>
-                                <option>Flores</option>
-                                <option>Hortalizas</option>
-                                <option>Frutales</option>
-                                <option>Otro</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
-                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300">
-                            <i class="fas fa-paper-plane mr-2"></i>Enviar Solicitud
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <div class="text-2xl font-bold text-green-400 mb-4">
-                        <i class="fas fa-leaf mr-2"></i>Oscadri Bio
-                    </div>
-                    <p class="text-gray-400 mb-4">
-                        Liderando la revolución sostenible en agricultura con más de 26 años de experiencia.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-green-400 transition duration-300">
-                            <i class="fab fa-facebook text-2xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-green-400 transition duration-300">
-                            <i class="fab fa-instagram text-2xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-green-400 transition duration-300">
-                            <i class="fab fa-linkedin text-2xl"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Productos</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-green-400 transition duration-300">Hilaza Biodegradable</a></li>
-                        <li><a href="#" class="hover:text-green-400 transition duration-300">Hilos Tradicionales</a></li>
-                        <li><a href="#" class="hover:text-green-400 transition duration-300">Soluciones Personalizadas</a></li>
-                        <li><a href="#" class="hover:text-green-400 transition duration-300">Certificaciones</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Soporte</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-green-400 transition duration-300">Guías de Uso</a></li>
-                        <li><a href="#" class="hover:text-green-400 transition duration-300">Asesoría Técnica</a></li>
-                        <li><a href="#" class="hover:text-green-400 transition duration-300">Calculadora</a></li>
-                        <li><a href="#" class="hover:text-green-400 transition duration-300">FAQ</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><i class="fas fa-map-marker-alt mr-2"></i>Carrera 63 37-3, Itagüí</li>
-                        <li><i class="fas fa-phone mr-2"></i>301 281 2904</li>
-                        <li><i class="fas fa-envelope mr-2"></i>info@oscadri.com</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Distribuidora Oscadri. Todos los derechos reservados. | Liderando la sostenibilidad agrícola desde 1997</p>
-            </div>
-        </div>
+      </div>
     </footer>
+  </div>
 
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            // Add mobile menu functionality here
-            console.log('Mobile menu clicked');
-        });
-
-        // Calculadora de sostenibilidad
-        function calcularImpacto() {
-            const hectareas = parseFloat(document.getElementById('hectareas').value) || 0;
-            const metros = parseFloat(document.getElementById('metros').value) || 0;
-            const ciclos = parseFloat(document.getElementById('ciclos').value) || 1;
-            
-            if (hectareas === 0 || metros === 0) {
-                alert('Por favor, completa todos los campos para calcular el impacto.');
-                return;
-            }
-            
-            // Cálculos basados en estimaciones realistas
-            const metrosTotal = hectareas * metros * ciclos;
-            const ahorroEconomico = metrosTotal * 0.15; // $0.15 por metro ahorrado
-            const residuosEvitados = metrosTotal * 0.002; // 2g por metro de residuo evitado
-            const co2Reducido = metrosTotal * 0.003; // 3g de CO2 por metro
-            const horasAhorradas = (metrosTotal / 1000) * 2; // 2 horas por cada 1000m de limpieza evitada
-            
-            // Mostrar resultados
-            document.getElementById('resultados').classList.remove('hidden');
-            document.getElementById('ahorro-economico').textContent = `$${ahorroEconomico.toLocaleString('es-CO')}`;
-            document.getElementById('residuos-evitados').textContent = `${residuosEvitados.toFixed(1)} kg`;
-            document.getElementById('co2-reducido').textContent = `${co2Reducido.toFixed(1)} kg`;
-            document.getElementById('horas-ahorradas').textContent = `${horasAhorradas.toFixed(1)} hrs`;
-            
-            // Mostrar gráfico
-            mostrarGrafico(ahorroEconomico, residuosEvitados, co2Reducido, horasAhorradas);
-        }
-
-        function mostrarGrafico(ahorro, residuos, co2, horas) {
-            document.getElementById('impacto-visual').classList.remove('hidden');
-            
-            const ctx = document.getElementById('impactoChart').getContext('2d');
-            
-            // Destruir gráfico anterior si existe
-            if (window.impactoChart) {
-                window.impactoChart.destroy();
-            }
-            
-            window.impactoChart = new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Ahorro Económico', 'Residuos Evitados', 'CO₂ Reducido', 'Horas Ahorradas'],
-                    datasets: [{
-                        data: [ahorro/100, residuos*10, co2*10, horas*50],
-                        backgroundColor: [
-                            '#10b981',
-                            '#3b82f6',
-                            '#8b5cf6',
-                            '#f59e0b'
-                        ],
-                        borderWidth: 0
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            position: 'bottom',
-                            labels: {
-                                padding: 20,
-                                font: {
-                                    size: 14
-                                }
-                            }
-                        },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    const labels = [
-                                        `Ahorro: $${ahorro.toLocaleString('es-CO')}`,
-                                        `Residuos: ${residuos.toFixed(1)} kg`,
-                                        `CO₂: ${co2.toFixed(1)} kg`,
-                                        `Horas: ${horas.toFixed(1)} hrs`
-                                    ];
-                                    return labels[context.dataIndex];
-                                }
-                            }
-                        }
-                    }
-                }
-            });
-        }
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe elements for animation
-        document.querySelectorAll('.fade-in-up, .slide-in-left, .slide-in-right').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            observer.observe(el);
-        });
-
-        // Counter animations
-        function animateCounters() {
-            const counters = document.querySelectorAll('[data-counter]');
-            counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-counter'));
-                let current = 0;
-                const increment = target / 100;
-                const timer = setInterval(() => {
-                    current += increment;
-                    counter.textContent = Math.floor(current);
-                    if (current >= target) {
-                        counter.textContent = target;
-                        clearInterval(timer);
-                    }
-                }, 20);
-            });
-        }
-
-        // Initialize animations when page loads
-        window.addEventListener('load', () => {
-            setTimeout(animateCounters, 1000);
-        });
-    </script>
+  <script>
+    // Pone automáticamente el año actual en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-    <script id="html_badge_script1">
-        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
-            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDtAwNG3Lnh2WAjDumDXldBO38jV1r9FLVcC6ZQJEiuwNx8FYxAd0IXh0sKBx5KGUFGPI5GgckeOxjR4MQkxcxfBWdDgXhP6hnppvnaS4U%2FhYpLF6ktqpV4sPvczhltTOnUDpJaeEGng8to0UmK0A2L%2BNZUqsAH6MUHKCxUFUiXlTZz7PSaKp4fSeHHugbhI6kRhWNnNpdtzl2jrJEphQsqYd5iO9y3iYQ7UjycOnsDS8XbxiL7KL8pycFBVt892Hn3faRl2SibP2qSyWCPPJkMzko8v5w8xjfJTp0mYGM7yN%2BYyVYm%2BuHLlVU3XeezvhXN%2Babm%2BFxmlRMSikNOMIjE707phYEX38Rx%2BXdCsyvma68LSzpMhQlqEWYB9GMjJxP0cvyMHs7%2BjHK0WI7Kdu2fIDq4uCOjG%2B%2BK9NWoniuE6C5pjGZmeiu1RJ5pbfZ%2FFHkcm950Xyk9eaEMKIztv7SYBURCL1GkNiZP%2FAOTEC4qGfZhlMR9JWb6LXwOyeLSXyo5ws0RlXLGMTawtLIuodcDM%3D";
-        window.__genspark_locale = "es-ES";
-        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDtAwNG3Lnh2WAjDumDXldBO38jV1r9FLVcC6ZQJEiuwNx8FYxAd0IXh0sKBx5KGUFGPI5GgckeOxjR4MQkxcxfBWdDgXhP6hnppvnaS4U/hYpLF6ktqpV4sPvczhltTOnUDpJaeEGng8to0UmK0A2L+NZUqsAH6MUHKCxUFUiXlTZz7PSaKp4fSeHHugbhI6kRhWNnNpdtzl2jrJEphQsqYd5iO9y3iYQ7UjycOnsDS8XbxiL7KL8pycFBVt892Hn3faRl2SibP2qSyWCPPJkMzko8v5w8xjfJTp0mYGM7yN+YyVYm+uHLlVU3XeezvhXN+abm+FxmlRMSikNOMIjE707phYEX38Rx+XdCsyvma68LSzpMhQlqEWYB9GMjJxP0cvyMHs7+jHK0WI7Kdu2fIDq4uCOjG++K9NWoniuE6C5pjGZmeiu1RJ5pbfZ/FHkcm950Xyk9eaEMKIztv7SYBURCL1GkNiZP/AOTEC4qGfZhlMR9JWb6LXwOyeLSXyo5ws0RlXLGMTawtLIuodcDM=";
-    </script>
-    
-        <script id="html_badge_script2" src="https://www.genspark.ai/html_badge.js"></script>
-        
-    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+
     
